@@ -1,0 +1,36 @@
+{
+    "deviceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "heartRates": [
+      {
+        "dateTime": "2022-12-02T13:50:00.000Z",
+        "value": 90
+      },
+     {
+        "dateTime": "2022-12-02T13:51:00.000Z",
+        "value": 110
+      },
+     {
+        "dateTime": "2022-12-02T13:52:00.000Z",
+        "value": 130
+      },
+     {
+        "dateTime": "2022-12-02T13:53:00.000Z",
+        "value": 150
+      },
+     {
+        "dateTime": "2022-12-02T13:54:00.000Z",
+        "value": 170
+      },
+     {
+        "dateTime": "2022-12-02T13:55:00.000Z",
+        "value": 190
+      }
+    ],
+    "stepCounts": [
+      {
+        "dateTime": "2022-12-02T13:50:00.000Z",
+        "value": 200
+      }
+    ],
+    "maxHeartRate": 200
+  }

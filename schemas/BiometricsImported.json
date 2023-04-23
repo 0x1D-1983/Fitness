@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Biometrics",
+    "description": "Biometrics collected from the fitness tracker.",
+    "type": "object",
+    "additionalProperties": false,
+    "definitions": {
+      "HeartRate": {
+        "additionalProperties": false,
+        "properties": {
+          "DateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "Value": {
+            "format": "int32",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "StepCount": {
+        "additionalProperties": false,
+        "properties": {
+          "DateTime": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "Value": {
+            "format": "int32",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "properties": {
+      "DeviceId": {
+        "format": "guid",
+        "type": "string"
+      },
+      "HeartRates": {
+        "items": {
+          "$ref": "#/definitions/HeartRate"
+        },
+        "type": "array"
+      },
+      "StepCounts": {
+        "items": {
+          "$ref": "#/definitions/StepCount"
+        },
+        "type": "array"
+      },
+      "MaxHeartRate": {
+        "format": "int32",
+        "type": "integer"
+      }
+    }
+  }

@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "definitions": {
+      "HeartRateZone": {
+        "description": "",
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "type": "integer",
+        "x-enumNames": [
+          "None",
+          "Zone1",
+          "Zone2",
+          "Zone3",
+          "Zone4",
+          "Zone5"
+        ]
+      }
+    },
+    "properties": {
+      "DateTime": {
+        "format": "date-time",
+        "type": "string"
+      },
+      "DeviceId": {
+        "format": "guid",
+        "type": "string"
+      },
+      "HeartRate": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "MaxHeartRate": {
+        "format": "int32",
+        "type": "integer"
+      },
+      "Zone": {
+        "$ref": "#/definitions/HeartRateZone"
+      }
+    },
+    "title": "HeartRateZoneReached",
+    "type": "object"
+  }
