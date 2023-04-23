@@ -1,6 +1,8 @@
 # Heart Rate Zone Fitness App
-Two microservices apps to demonstrate async data communication implemented with Kafka topics using Confluent .NET
+Two microservice apps to demonstrate async data communication implemented with Kafka topics using the Confluent .NET
 consumer and producer libraries and transaction based commit logic.
+
+This is the completed solution of the course [Apache Kafka for .Net Developers](https://developer.confluent.io/learn-kafka/apache-kafka-for-dotnet/overview/) found in the Confluent Developer website.
 
 ## Client Gateway
 REST API service to submit fitness tracker data into a Kafka topic.
