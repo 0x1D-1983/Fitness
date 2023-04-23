@@ -77,5 +77,5 @@ public class HeartRateZoneWorker : BackgroundService
         }
 
         _consumer.Close();
-    }   
+    }
 }

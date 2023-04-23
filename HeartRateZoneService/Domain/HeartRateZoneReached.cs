@@ -1,8 +1,8 @@
 ﻿using System;
 namespace HeartRateZoneService.Domain
 {
-	public class HeartRateZoneReached
-	{
+    public class HeartRateZoneReached
+    {
         public Guid DeviceId { get; }
         public HeartRateZone Zone { get; }
         public DateTime DateTime { get; }
@@ -17,6 +17,5 @@ namespace HeartRateZoneService.Domain
             HeartRate = heartRate;
             MaxHeartRate = maxHeartRate;
         }
-	}
+    }
 }
-

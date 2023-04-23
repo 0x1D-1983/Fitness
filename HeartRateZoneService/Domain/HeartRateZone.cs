@@ -6,4 +6,3 @@ namespace HeartRateZoneService.Domain
         None, Zone1, Zone2, Zone3, Zone4, Zone5
     }
 }
-
